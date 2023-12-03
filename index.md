@@ -23,6 +23,7 @@ Hello! Can you please show how you exactly compile those Java files in your `gra
 #### 2:23 AM
 Sure. Here is a brief description of what it is supposed to do. In lines `11-20` we just copy a repository to a new folder for student submissions. Then on lines `21-27`, we check if there is a file in the student submission.
 Then we just copy both files to the grading area and compile them.
+
 ![grd](img/ts-3.png) 
 ![dir](img/ts-2.png) 
 
@@ -35,6 +36,7 @@ I'm not sure why exactly you compile files on Line `29`. Try removing it and see
 ![anon](img/av-1.png)  **Anonymous**
 #### 2:30 AM
 The idea of that compile is that without it the second compile can't see a `TestListExample.java` at all for some reason, can't say for sure why.
+
 ![err](img/ts-4.png) 
 
 ---
@@ -47,12 +49,14 @@ Can you please check what exactly does `$TEST_CLASS` variable contains?
 ![anon](img/av-1.png)  **Anonymous**
 #### 2:37 AM
 Oh, I guess that was the problem, thank you very much! Thank you very much!
+
 ![var](img/ts-5.png) 
 
 ---
 ![anon](img/av-1.png)  **Anonymous**
 #### 2:43 AM
 Never mind, now it acts even stranger.
+
 ![err](img/ts-6.png) 
 
 ---
@@ -64,6 +68,7 @@ Please attach the entire code of `grade.sh`, Are there any more symptoms from th
 ![anon](img/av-1.png)  **Anonymous**
 #### 2:52 AM
 Not a single other clue, here is the entire code of the `grade.sh`
+
 ![code](img/ts-7.png) 
 
 ---
@@ -78,6 +83,7 @@ I would recommend returning `$TEST_CLASS` back to what it was before, and then j
 ![anon](img/av-1.png)  **Anonymous**
 #### 2:67 AM
 Thank you very much! Not that it works perfectly! Thank you very much!
+
 ![chao](img/ts-8.png) 
 
 ---
@@ -89,6 +95,7 @@ No problem, but Isn't that student submission receive a full score for that part
 ![anon](img/av-1.png)  **Anonymous**
 #### 3:12 AM
 Oh, thank you for noticing, I almost forgot about that part. Here is also a screenshot of the method that failed in `TestListExamples.java`.
+
 ![grt](img/ts-9.png) 
 ![code](img/ts-10.png) 
 
@@ -102,6 +109,7 @@ Try to look closely at Line `117`, and see what exactly your method is comparing
 #### 3:48 AM
 Ooooooo, I see. I guess I misspelled it at some point. And was comparing `expected` with `input` instead of `filtered` array. After that fix it seems that everything works even better! 
 One more time, thank you very much!
+
 ![good](img/ts-11.png)
 
 
